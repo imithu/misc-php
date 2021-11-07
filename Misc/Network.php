@@ -10,10 +10,10 @@ class Network
   /**
    * get ip
    * 
-   * @return array
+   * @return string
    * 
    * @since   🌱 1.2.0
-   * @version 🌴 1.3.0
+   * @version 🌴 1.3.1
    * @author  ✍ Muhammad Mahmudul Hasan Mithu
    */
   public static function ip(): string
