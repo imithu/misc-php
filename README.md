@@ -13,7 +13,7 @@ language specific library in php for quick coding
 
 ## docs - method
 ``` php
-  \Misc\Moment::datetime()    // return utc datetime
+  \Misc\Moment::datetime()    // return utc datetime (deprecated)
   \Misc\Network::ip()         // get ip
   \Misc\Media\Stream::start($media_path)
 ```
