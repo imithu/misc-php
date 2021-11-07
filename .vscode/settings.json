@@ -1,6 +1,0 @@
-{
-  // based on laravel.  change the path if necessary
-  "intelephense.environment.includePaths": [
-    "../../"
-  ]
-}
