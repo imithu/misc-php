@@ -1,3 +1,11 @@
+## 🔖 V1.3.1
+### 🐛 Fix
+- return type in ip method
+
+
+---
+
+
 ## 🔖 V1.3.0
 ### 🌴 Update
 - improve ip method
