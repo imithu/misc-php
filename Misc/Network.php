@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace Misc;
 
 
@@ -12,13 +13,12 @@ class Network
    * @return array
    * 
    * @since   🌱 1.2.0
-   * @version 🌴 1.2.0
+   * @version 🌴 1.3.0
    * @author  ✍ Muhammad Mahmudul Hasan Mithu
    */
-  public static function ip(): array
+  public static function ip(): string
   {
-    return
-    [
+    return json_encode([
       // shared internet service
       'HTTP_CLIENT_IP'       => isset($_SERVER['HTTP_CLIENT_IP']       ) ? htmlspecialchars($_SERVER['HTTP_CLIENT_IP']       ) : NULL,
       // cloudflare
@@ -30,7 +30,7 @@ class Network
       'HTTP_X_FORWARDED_FOR' => isset($_SERVER['HTTP_X_FORWARDED_FOR'] ) ? htmlspecialchars($_SERVER['HTTP_X_FORWARDED_FOR'] ) : NULL,
       // access
       'REMOTE_ADDR'          => isset($_SERVER['REMOTE_ADDR']          ) ? htmlspecialchars($_SERVER['REMOTE_ADDR']          ) : NULL
-    ];
+    ]);
   }
 
 
